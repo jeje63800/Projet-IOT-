@@ -22,17 +22,17 @@ Hello
 
 (pour installer express et sauvegarder)
 
--- Créer dans le dossier un fichier  ‘app.js ‘
-	- le remplir avec #template API 
+--- Créer dans le dossier un fichier  ‘app.js ‘
+
+-- le remplir avec #template API 
   
   ![image](https://user-images.githubusercontent.com/81513016/210803218-0c7a5fd3-58d9-494c-90bb-32737fec9d1e.png)
 
+-	Remplacer le port par un port choisi au-dessus de 1024 (ici  3003)
 
--	Remplacer le port par un port choisi au-dessus de 1024 
-  (ici  3003)
 -	A la place du ‘app.get’ mettre ‘app.post’ (ligne 5)
  
--	Insérer c’est ligne de code :
+-	Insérer ces lignes de code :
 
 ```app.post('/api/temperature', (req, res) => {
     let data = "";
@@ -58,8 +58,8 @@ Hello
       });
 })
 ```
--	Retourner dans le terminal a l’interieur du dossier MiddleWare
--	Exécuter les commandes
+-	Retourner dans le terminal à l’intérieur du dossier MiddleWare
+-	Exécuter les commandes suivantes : 
   o	npm i -g typescript && npm i --save-dev @types/node  #installer Type script
   o	tsc –-init  # crée la condfiguration par defaut 
   o	npm install --save @influxdata/influxdb-client  # ?
@@ -68,7 +68,7 @@ Hello
 -	Remplacer la premiere ligne du fichier par :
   o	import express from ‘express’
  
--	insérer en dessous des 3 première ligne : 
+-	insérer en dessous des 3 premières lignes : 
 
 ```'use strict'
 
