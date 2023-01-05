@@ -49,8 +49,8 @@ Hello
                 console.log("Write Finished");
               })
       });
-})```
-
+})
+```
 -	Retourner dans le terminal a l’interieur du dossier MiddleWare
 -	Exécuter les commandes
   o	npm i -g typescript && npm i --save-dev @types/node  #installer Type script
@@ -62,8 +62,8 @@ Hello
   o	import express from ‘express’
  
 -	insérer en dessous des 3 première ligne : 
-```
-'use strict'
+
+```'use strict'
 /** @module write
  * Writes a data point to InfluxDB using the Javascript client library with Node.js.
 **/
