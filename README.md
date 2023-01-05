@@ -10,7 +10,7 @@ Hello
 - Créer un dossier 'projet' où mettre le dossier IOT Main
 - Créer dans projet un autre dossier MiddleWare 
 
---- Dans un editeur (VS code par exemple) 
+-   Dans un editeur (VS code par exemple) 
 - Ouvrir le dossier projet
 - Ouvrir un terminal dans le dossier MidlleWare
 - faire : 
@@ -22,9 +22,9 @@ Hello
 
 (pour installer express et sauvegarder)
 
---- Créer dans le dossier un fichier  ‘app.js ‘
+-   Créer dans le dossier un fichier  ‘app.js ‘
 
--- le remplir avec #template API 
+- le remplir avec #template API 
   
   ![image](https://user-images.githubusercontent.com/81513016/210803218-0c7a5fd3-58d9-494c-90bb-32737fec9d1e.png)
 
@@ -178,13 +178,11 @@ Ajouter :
 
 -	Aller sur la page de Grafana : 
 
->	Se rendre sur «Dachboard »
->	Faire « new DashBoard »
->	Sélectionner la bonne data source 
+-	Se rendre sur «Dachboard »
+-	Faire « new DashBoard »
+-	Sélectionner la bonne data source 
 	
 ![image](https://user-images.githubusercontent.com/81513016/210804835-9df08b84-f64b-4464-b154-684aea631e4b.png)
-
-  
 
 -	Mettre ces ligne de code à la suite :
 ```
