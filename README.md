@@ -64,33 +64,18 @@ Hello
 -	insérer en dessous des 3 première ligne : 
 
 ```'use strict'
-/** @module write
- * Writes a data point to InfluxDB using the Javascript client library with Node.js.
-**/
 
 import { InfluxDB, Point } from '@influxdata/influxdb-client'
 
-/** Environment variables **/
 const url = "http://localhost:8086"
 const token = "jxyyP8sXfg2DaBxLXHR8VUWGS2lbZipqcK9UbpV9F_xckIPFrAhrCz12kYWMPWroifL4V7UPgRjNhClCxJ-X9g=="
 const org = "0753b1e8b6c45834"
 const bucket = "c2a4ac8af3c345e6"
 
-/**
- * Instantiate the InfluxDB client
- * with a configuration object.
- **/
 const influxDB = new InfluxDB({ url, token })
 
-/**
- * Create a write client from the getWriteApi method.
- * Provide your `org` and `bucket`.
- **/
 const writeApi = influxDB.getWriteApi(org, bucket)
 
-/**
- * Apply default tags to all points.
- **/
 writeApi.useDefaultTags({ region: 'west' }) 
 ```
 
