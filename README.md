@@ -14,9 +14,9 @@ Hello
 - Ouvrir le dossier projet
 - Ouvrir un terminal dans le dossier MidlleWare
 - faire : 
-> npm init <
+>> npm init 
 (accepter tout par défaut avec entrer pour creer le package .json)
-> npm install express --save <
+>> npm install express --save
 (pour installer express et sauvegarder)
 -- Créer dans le dossier un fichier  ‘app.js ‘
 	- le remplir avec #template API 
