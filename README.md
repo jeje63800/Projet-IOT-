@@ -4,18 +4,21 @@
 
 
 Hello
-- telecharge le dossier "IOT main"
-- installer node js 
-- crée un dossier 'Projet' ou mettre le dossier IOT Main
-- crée dans Projet un autre dossier MiddleWare 
+- Télécharger le dossier "IOT main"
+- Installer node js 
+> (https://nodejs.org/en/)
+- Créer un dossier 'projet' où mettre le dossier IOT Main
+- Créer dans projet un autre dossier MiddleWare 
 
--- Dans un editeur (vs code) 
-- Ouvrir le dossier Projet
-- ouvrir un terminal dans le dossier MidlleWare
+--- Dans un editeur (VS code par exemple) 
+- Ouvrir le dossier projet
+- Ouvrir un terminal dans le dossier MidlleWare
 - faire : 
--npm init (accepter tout par defaut avec entrer) pour crée le package .json 
-	- npm install express --save #pour installer express
--- Crée dans le dossier un fichier  ‘app.js ‘
+> npm init 
+(accepter tout par défaut avec entrer pour creer le package .json)
+> npm install express --save 
+(pour installer express et sauvegarder)
+-- Créer dans le dossier un fichier  ‘app.js ‘
 	- le remplir avec #template API 
   
   ![image](https://user-images.githubusercontent.com/81513016/210803218-0c7a5fd3-58d9-494c-90bb-32737fec9d1e.png)
