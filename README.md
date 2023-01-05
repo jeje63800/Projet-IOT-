@@ -82,11 +82,9 @@ Hello
 ```
 import express from ‘express’ 
 ```
- 
 -	insérer en dessous des 3 premières lignes : 
 
 ```
-
 'use strict'
 
 import { InfluxDB, Point } from '@influxdata/influxdb-client'
@@ -104,37 +102,42 @@ writeApi.useDefaultTags({ region: 'west' })
 ```
 
 -	Télécharger InfluxDb
--	Lancer InfluxDb.exe en cmd
--	Aller sur un navigateur et rechercher ‘localhost:8086’
- 
--	Aller dans la categorie de la fleche et cliquer sur ‘Buckets’
+>https://dl.influxdata.com/influxdb/releases/influxdb2-2.5.1-windows-amd64.zip
+-	Extraire et lancer InfluxDb.exe en cmd
+-	Aller sur un navigateur et rechercher ‘**localhost:8086**’
+-	Aller dans l'icône de la flèche et cliquer sur ‘Buckets’
 
  ![image](https://user-images.githubusercontent.com/81513016/210803526-ef19511e-c483-4536-8d82-170a65180801.png)
 
--	Crée un Bucket
--	Aller dans la categorie de la fleche et cliquer sur ‘Token’
--	Générer un Token avec seulement le Bucket crée auparavant en droit et copié le token dans un fichier (il disparait)
+-	Créer un Bucket
+-	Aller dans l'icône de la fleche et cliquer sur ‘Token’
+-	Générer un Token avec seulement le Bucket crée auparavant en lecture et copier le token dans un fichier (il disparait)
 
  ![image](https://user-images.githubusercontent.com/81513016/210803583-9a488cb9-a37d-4cfa-8312-90f2432c9cd1.png)
 
--	Crée un deuxième token avec tous les droits et copié le dans un fichier (il disparait)
--	Aller dans bucket et copié l’id de celui que vous avez crée et metter le a la ligne de code :
+-	Créer un deuxième token avec tous les droits et copier le dans un fichier (il disparait)
+-	Aller dans bucket et copier l’id de celui que vous avez créer et mettez le à la ligne de code :
+```
 const bucket = "c2a4ac8af3c345e6"
-
+```
 -	Prendre cette partie de l’url  
 
--	Le mettre dans la ligne de code :
-```const org = "0753b1e8b6c45834" ```
+![image](https://user-images.githubusercontent.com/98834517/210812958-de899e70-dc33-4782-b32d-e9891c3a8ca2.png)
+
+-	Le mettre dans la ligne de code suivante :
+```
+const org = "0753b1e8b6c45834"
+```
 
 -	Installer grafana 
--	Aller sur un navigateur et se rendre sur ‘localhost :3000’ 
+>https://grafana.com/grafana/download?platform=windows
+-	Aller sur un navigateur et se rendre sur ‘**localhost:3000**’ 
 
- 
--	Aller dans le menu ‘ config’ et dans l’onglet ‘Data source’ 
+-	Aller dans le menu ‘configuration’ (roulette) et dans l’onglet ‘Data source’ 
 
- ![image](https://user-images.githubusercontent.com/81513016/210804500-4aad2fa8-3eab-4d42-9313-73503d5743fd.png)
+![image](https://user-images.githubusercontent.com/98834517/210813388-d984ddb7-8fa5-4d55-852d-877df4f1839b.png)
 
--	Replisser les données en personnalisant pour vous les champ personnel
+-	Remplissez les données en personnalisant pour vous les champs personnels
  	 
 ![image](https://user-images.githubusercontent.com/81513016/210804537-8acf5f83-328d-4b33-aac6-b47df62991b6.png)
 
@@ -142,28 +145,42 @@ const bucket = "c2a4ac8af3c345e6"
 
 
 -	Ouvrir un terminal dans MiddleWare et executer
-	o	npm i
+
+>	npm i
+
 -	Ouvrir un terminal dans Tp Iot
-	o	npm i 
+
+>	npm i 
+
 -	Aller dans température.js
  
 -	Remplacer le port 8000 avec celui que vous avez choisi dans app.js (ligne3) :
-``` const ENDPOINT = 'http://localhost:8000/api/temperature'; ```
+``` 
+const ENDPOINT = 'http://localhost:8000/api/temperature'; 
+```
 
--	Dans le fichier package.json de Midlleware  aprés la ligne : 
+-	Dans le fichier package.json de Middleware  après la ligne : 
+```
 "main": "index.js",
-Ajouter 
+```
+Ajouter :
+```
 "type": "module",
+```
 
 -	Ouvrir un terminal sur MiddleWare et exécuter :
-	o	node ./app.js
+
+>	node ./app.js
+
 -	Ouvrir un terminal dans le Tp Iot et exécuter :
-	o	npm run sensors
+
+>	npm run sensors
 
 -	Aller sur la page de Grafana : 
-	o	Se rendre sur «Dachboard »
-	o	Faire « new DashBoard »
-	o	Sélectionner la bonne data source 
+
+>	Se rendre sur «Dachboard »
+>	Faire « new DashBoard »
+>	Sélectionner la bonne data source 
 	
 ![image](https://user-images.githubusercontent.com/81513016/210804835-9df08b84-f64b-4464-b154-684aea631e4b.png)
 
