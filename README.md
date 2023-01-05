@@ -170,7 +170,8 @@ from(bucket: " TP IOT ")
     r._field == "humidity"
   )
  ```
- 
+ ![image](https://user-images.githubusercontent.com/98834517/210806256-812f6152-a3fd-41c8-9a02-593c00ecdbf0.png)
+
 -	Ajouter un autre dashboard  , resélectionné la bonne data source et metter
 
 ```
