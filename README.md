@@ -66,15 +66,15 @@ Hello
 	
 >	tsc –-init  
 	
-# crée la condfiguration par defaut 
+#Crée la configuration par défaut 
 
 >	npm install --save @influxdata/influxdb-client  
 	
-# ?
+#?
 	
 >	npm install --save @influxdata/influxdb-client-apis  
 	
-# ?
+#?
 	
 -	Retourner dans ‘app.js’
 -	Remplacer la première ligne du fichier par :
