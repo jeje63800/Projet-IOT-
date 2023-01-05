@@ -122,18 +122,24 @@ const bucket = "c2a4ac8af3c345e6"
 
  
 -	Aller dans le menu ‘ config’ et dans l’onglet ‘Data source’ 
- 
+
+ ![image](https://user-images.githubusercontent.com/81513016/210804500-4aad2fa8-3eab-4d42-9313-73503d5743fd.png)
+
 -	Replisser les données en personnalisant pour vous les champ personnel
  	 
+![image](https://user-images.githubusercontent.com/81513016/210804537-8acf5f83-328d-4b33-aac6-b47df62991b6.png)
+
+![image](https://user-images.githubusercontent.com/81513016/210804576-6e8abda2-ee22-4cf3-b983-052942c91cbe.png)
+
 
 -	Ouvrir un terminal dans MiddleWare et executer
-o	npm i
+	o	npm i
 -	Ouvrir un terminal dans Tp Iot
-o	npm i 
+	o	npm i 
 -	Aller dans température.js
  
 -	Remplacer le port 8000 avec celui que vous avez choisi dans app.js (ligne3) :
-const ENDPOINT = 'http://localhost:8000/api/temperature';
+``` const ENDPOINT = 'http://localhost:8000/api/temperature'; ```
 
 -	Dans le fichier package.json de Midlleware  aprés la ligne : 
 "main": "index.js",
@@ -141,31 +147,36 @@ Ajouter
 "type": "module",
 
 -	Ouvrir un terminal sur MiddleWare et exécuter :
-o	node ./app.js
+	o	node ./app.js
 -	Ouvrir un terminal dans le Tp Iot et exécuter :
-o	npm run sensors
+	o	npm run sensors
 
 -	Aller sur la page de Grafana : 
-o	Se rendre sur «Dachboard »
-o	Faire « new DashBoard »
-o	Sélectionner la bonne data source 
+	o	Se rendre sur «Dachboard »
+	o	Faire « new DashBoard »
+	o	Sélectionner la bonne data source 
+	
+![image](https://user-images.githubusercontent.com/81513016/210804835-9df08b84-f64b-4464-b154-684aea631e4b.png)
+
   
 
 -	Mettre ces ligne de code à la suite :
+```
 from(bucket: " TP IOT ")
   |> range(start: -1h)
   |> filter(fn: (r) =>
     r._measurement == "humidity" and
     r._field == "humidity"
   )
- 
+ ```
 -	Ajouter un autre dashboard  , resélectionné la bonne data source et metter
+```
 from(bucket: " TP IOT ")
   |> range(start: -1h)
   |> filter(fn: (r) =>
     r._measurement == "temperature" and
     r._field == "temperature "
   )
+```
 
 
-![Uploading image.png…]()
