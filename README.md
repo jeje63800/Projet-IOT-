@@ -162,15 +162,16 @@ Ajouter
 
 -	Mettre ces ligne de code à la suite :
 
-```
 from(bucket: " TP IOT ")
   |> range(start: -1h)
   |> filter(fn: (r) =>
     r._measurement == "humidity" and
     r._field == "humidity"
   )
- ```
+
+ 
  ![image](https://user-images.githubusercontent.com/98834517/210806256-812f6152-a3fd-41c8-9a02-593c00ecdbf0.png)
+
 
 -	Ajouter un autre dashboard  , resélectionné la bonne data source et metter
 
