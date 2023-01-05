@@ -78,11 +78,16 @@ Hello
 	
 -	Retourner dans ‘app.js’
 -	Remplacer la première ligne du fichier par :
-  ```	import express from ‘express’ ```
+  
+```
+import express from ‘express’ 
+```
  
 -	insérer en dessous des 3 premières lignes : 
 
-```'use strict'
+```
+
+'use strict'
 
 import { InfluxDB, Point } from '@influxdata/influxdb-client'
 
