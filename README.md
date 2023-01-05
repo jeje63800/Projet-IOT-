@@ -62,19 +62,19 @@ Hello
 -	Exécuter les commandes suivantes : 
 >	npm i -g typescript && npm i --save-dev @types/node  
 
-	#installe Type script
+#installe Type script
 	
 >	tsc –-init  
 	
-	# crée la condfiguration par defaut 
+# crée la condfiguration par defaut 
 
 >	npm install --save @influxdata/influxdb-client  
 	
-	# ?
+# ?
 	
 >	npm install --save @influxdata/influxdb-client-apis  
 	
-	# ?
+# ?
 	
 -	Retourner dans ‘app.js’
 -	Remplacer la première ligne du fichier par :
