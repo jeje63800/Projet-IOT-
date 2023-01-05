@@ -60,13 +60,25 @@ Hello
 ```
 -	Retourner dans le terminal à l’intérieur du dossier MiddleWare
 -	Exécuter les commandes suivantes : 
-  o	npm i -g typescript && npm i --save-dev @types/node  #installer Type script
-  o	tsc –-init  # crée la condfiguration par defaut 
-  o	npm install --save @influxdata/influxdb-client  # ?
-  o	npm install --save @influxdata/influxdb-client-apis  # ?
+>	npm i -g typescript && npm i --save-dev @types/node  
+
+	#installe Type script
+	
+>	tsc –-init  
+	
+	# crée la condfiguration par defaut 
+
+>	npm install --save @influxdata/influxdb-client  
+	
+	# ?
+	
+>	npm install --save @influxdata/influxdb-client-apis  
+	
+	# ?
+	
 -	Retourner dans ‘app.js’
--	Remplacer la premiere ligne du fichier par :
-  o	import express from ‘express’
+-	Remplacer la première ligne du fichier par :
+  ```	import express from ‘express’ ```
  
 -	insérer en dessous des 3 premières lignes : 
 
