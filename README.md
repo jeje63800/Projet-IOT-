@@ -169,7 +169,9 @@ from(bucket: " TP IOT ")
     r._field == "humidity"
   )
  ```
+ 
 -	Ajouter un autre dashboard  , resélectionné la bonne data source et metter
+
 ```
 from(bucket: " TP IOT ")
   |> range(start: -1h)
