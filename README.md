@@ -183,5 +183,6 @@ from(bucket: " TP IOT ")
     r._field == "temperature "
   )
 ```
+![image](https://user-images.githubusercontent.com/98834517/210807061-fd4a25f4-1443-44a0-b682-eff3a312758d.png)
 
 
