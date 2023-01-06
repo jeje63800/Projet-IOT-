@@ -55,8 +55,6 @@ Hello
             writeApi.flush().then(function () {
                 console.log("Write Finished");
               })
-      });
-})
 ```
 -	Retourner dans le terminal à l’intérieur du dossier MiddleWare
 -	Exécuter les commandes suivantes : 
