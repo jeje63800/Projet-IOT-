@@ -178,7 +178,7 @@ Ajouter :
 
 -	Aller sur la page de Grafana : 
 
--	Se rendre sur «Dachboard »
+-	Se rendre sur «DashBoard »
 -	Faire « new DashBoard »
 -	Sélectionner la bonne data source 
 	
