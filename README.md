@@ -88,4 +88,4 @@
   _Réponse : "Option non valide. Veuillez réessayer."_
 
 - **Quitter le programme avec l'option de menu**  
-  _Réponse
+  _Réponse : "Quitter l'agenda." et sortie du programme._
